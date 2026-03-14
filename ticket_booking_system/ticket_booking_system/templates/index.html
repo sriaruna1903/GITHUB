@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Online Ticket Booking</h1>
+
+<a href="/book">Book Ticket</a>
+
+<h2>Bookings</h2>
+
+<table>
+<tr>
+<th>Name</th>
+<th>Movie</th>
+<th>Seats</th>
+</tr>
+
+{% for b in bookings %}
+<tr>
+<td>{{b[1]}}</td>
+<td>{{b[2]}}</td>
+<td>{{b[3]}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
